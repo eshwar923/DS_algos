@@ -1,0 +1,149 @@
+package com.linkedlist;
+
+public class Test {
+
+	public static void main(String[] args) {
+		testAdd();
+//		testAddAtBeginning();
+//		testAddAtIndex();
+//		testGet();
+//		testGetFirst();
+//		testGetLast();
+//		testDeleteAtBeginning();
+//		testDeleteAtEnd();
+//		testDeleteAtIndex();
+//		testReplaceAtFirst();
+//		testReplaceAtEnd();
+//		testReplaceAtIndex();
+	}
+	
+	static void testAdd() {
+		LinkedList<Integer> list = new LinkedList<>();
+		list.add(2);
+		list.add(3);
+		list.add(4);
+		list.add(5);
+		System.out.println(list);
+		System.out.println(list.length());
+	}
+	
+	static void testAddAtBeginning() {
+		LinkedList list = new LinkedList();
+		list.add(2);
+		list.add(3);
+		list.add(4);
+		list.add(5);
+		list.addAtBeginning(1);
+		System.out.println(list);
+		System.out.println(list.length());
+	}
+
+	static void testAddAtIndex() {
+		LinkedList list = new LinkedList();
+		list.add(50);
+		list.add(12);
+		list.add(33);
+		list.add(42);
+		list.addAtIndex(2, 1);
+		System.out.println(list);
+		System.out.println(list.length());
+	}
+	
+	static void testGet() {
+		LinkedList list = new LinkedList();
+		list.add(50);
+		list.add(12);
+		list.add(33);
+		list.add(42);
+		System.out.println(list.get(2));
+	}
+	
+	static void testGetFirst() {
+		LinkedList list = new LinkedList();
+		list.add(50);
+		list.add(12);
+		list.add(33);
+		list.add(42);
+		System.out.println(list.getFirst());
+	}
+	static void testGetLast() {
+		LinkedList list = new LinkedList();
+		System.out.println(list.getLast());
+	}
+	
+	static void testDeleteAtBeginning() {
+		LinkedList list = new LinkedList();
+		list.add(50);
+		System.out.println(list.deleteAtBeginning());
+		System.out.println(list);
+	}
+	
+	static void testDeleteAtEnd() {
+		LinkedList list = new LinkedList();
+		list.add(50);
+		System.out.println(list.deleteAtEnd());
+		System.out.println(list);
+	}
+	
+	static void testDeleteAtIndex() {
+		LinkedList list = new LinkedList();
+		list.add(50);
+		list.add(12);
+		list.add(33);
+		list.add(42);
+		System.out.println(list.deleteAtIndex(3));
+		System.out.println(list);
+	}
+	
+	static void testReplaceAtFirst() {
+		LinkedList list = new LinkedList();
+		list.add(50);
+		list.add(12);
+		list.add(33);
+		list.add(42);
+		System.out.println(list.replaceAtFirst(23));
+		System.out.println(list);
+	}
+	
+	static void testReplaceAtEnd() {
+		LinkedList list = new LinkedList();
+		System.out.println(list.replaceAtEnd(23));
+		System.out.println(list);
+	}
+	
+	static void testReplaceAtIndex() {
+		LinkedList list = new LinkedList();
+		list.add(50);
+		list.add(12);
+		list.add(33);
+		list.add(42);
+		System.out.println(list.replaceAtIndex(23, 1));
+		System.out.println(list);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
